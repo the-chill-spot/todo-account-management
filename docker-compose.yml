@@ -1,0 +1,16 @@
+version: "3.1"
+services:
+  todo-account-management:
+    container_name: todo-account-management
+    build:
+      args:
+        - ASPNETCORE_ENVIRONMENT_ARG=Development
+        - BUILD_CONFIGURATION_ARG=Debug
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"
+    networks:
+      - todo-network
+networks:
+  todo-network:
