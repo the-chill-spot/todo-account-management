@@ -22,6 +22,7 @@ public static class AWSCognito
         .AddJwtBearer(options =>
         {
             options.Authority = configuration["AWSCognito:Authority"];
+            // options.Audience = configuration["AWSCognito:Audience"];        
             options.TokenValidationParameters = new TokenValidationParameters
             {
                 ValidateIssuerSigningKey = true,

@@ -8,12 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="Amazon.AspNetCore.Identity.Cognito" Version="3.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Infrastructure\TheChillSpot.Todo.AccountManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\Application\TheChillSpot.Todo.AccountManagement.Application.csproj" />
   </ItemGroup>
 
 </Project>
