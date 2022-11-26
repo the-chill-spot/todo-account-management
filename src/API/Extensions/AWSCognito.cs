@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
-namespace API.Extensions;
+namespace TheChillSpot.Todo.AccountManagement.API.Extensions;
 
 public static class AWSCognito
 {
